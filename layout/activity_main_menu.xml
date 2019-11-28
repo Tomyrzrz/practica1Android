@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoverde"
+    tools:context=".MainMenu">
+
+    <ImageView
+        android:id="@+id/img_register_students_menu"
+        style="@style/ImgsIcons"
+        android:contentDescription="@string/img_descriptions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_create_course_menu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_list_courses_menu"
+        app:srcCompat="@drawable/icon_add_student" />
+
+    <ImageView
+        android:id="@+id/img_assignp_menu"
+        style="@style/ImgsIcons"
+        android:contentDescription="@string/img_descriptions"
+        app:layout_constraintBottom_toTopOf="@+id/img_assign_courso_student_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_list_data_course_menu"
+        app:layout_constraintTop_toBottomOf="@+id/txt_main_menu_title"
+        app:srcCompat="@drawable/assignprofe" />
+
+    <ImageView
+        android:id="@+id/img_create_course_menu"
+        style="@style/ImgsIcons"
+        android:contentDescription="@string/img_descriptions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_register_students_menu"
+        app:layout_constraintTop_toBottomOf="@+id/img_assign_courso_student_menu"
+        app:srcCompat="@drawable/icon_create_course" />
+
+    <ImageView
+        android:id="@+id/img_assign_courso_student_menu"
+        style="@style/ImgsIcons"
+        android:contentDescription="@string/img_descriptions"
+        app:layout_constraintBottom_toTopOf="@+id/img_create_course_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_list_courses_menu"
+        app:layout_constraintTop_toBottomOf="@+id/img_assignp_menu"
+        app:srcCompat="@drawable/asssgncourso" />
+
+    <ImageView
+        android:id="@+id/img_list_data_course_menu"
+        style="@style/ImgsIcons"
+        android:contentDescription="@string/img_descriptions"
+        app:layout_constraintBottom_toTopOf="@+id/img_list_courses_menu"
+        app:layout_constraintEnd_toStartOf="@+id/img_assignp_menu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_main_menu_title"
+        app:srcCompat="@drawable/list_data_course" />
+
+    <ImageView
+        android:id="@+id/img_list_courses_menu"
+        style="@style/ImgsIcons"
+        android:contentDescription="@string/img_descriptions"
+        app:layout_constraintBottom_toTopOf="@+id/img_register_students_menu"
+        app:layout_constraintEnd_toStartOf="@+id/img_assign_courso_student_menu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_list_data_course_menu"
+        app:srcCompat="@drawable/list_all" />
+
+    <TextView
+        android:id="@+id/txt_main_menu_title"
+        style="@style/TextTitles"
+        android:text="@string/txt_main_menu_title"
+        app:layout_constraintBottom_toTopOf="@+id/img_assignp_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
